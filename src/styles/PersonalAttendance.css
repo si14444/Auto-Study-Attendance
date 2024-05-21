@@ -1,0 +1,46 @@
+.attendance-bar-container {
+  display: flex;
+  align-items: center;
+}
+
+.attendance-bar {
+  position: relative;
+  height: 10px;
+  width: 40%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.attendance-bar-fill {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+.attendance-text {
+  margin-left: 10px;
+}
+
+.span-present {
+  color: #1ebd53;
+}
+
+.span-absent {
+  color: red;
+}
+.attendance-bar-container {
+  display: flex;
+  align-items: center;
+}
+
+.attendance-box {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000;
+  margin-right: 3px;
+}
+.attendance-box-span {
+  margin-left: 5px;
+}

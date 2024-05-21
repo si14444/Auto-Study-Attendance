@@ -1,0 +1,11 @@
+.naviBar {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background-color: white;
+}
+.naviBar img {
+  height: 100%;
+  margin-left: 20px;
+}
