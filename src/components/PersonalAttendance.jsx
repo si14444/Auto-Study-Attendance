@@ -3,7 +3,7 @@ import React from "react";
 import "../styles/PersonalAttendance.css";
 
 const PersonalAttendance = ({ data, period }) => {
-  const attendanceList = new Array(period + 1).fill(null);
+  const attendanceList = new Array(period).fill(true);
 
   console.log(attendanceList);
 
@@ -36,7 +36,18 @@ const PersonalAttendance = ({ data, period }) => {
               }}
             ></div>
           ))}
-          <div className="attendance-box-span">{attendanceCount} days</div>
+          <div
+            className="attendance-box-span"
+            style={{
+              color:
+                attendanceList.filter((attendance) => attendance === true)
+                  .length >= 5
+                  ? "#1ebd53"
+                  : "red",
+            }}
+          >
+            {attendanceCount} days
+          </div>
         </div>
       </td>
       <td>
